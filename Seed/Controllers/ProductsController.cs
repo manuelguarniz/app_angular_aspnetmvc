@@ -15,7 +15,7 @@ namespace Seed.Controllers
         public IHttpActionResult Get()
         {
             try
-            {
+            {             
                 using (var ctx = new BP_DB())
                 {
                     return Ok(ctx.Products.ToList());
